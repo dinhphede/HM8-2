@@ -4,42 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма 2</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Анкета відвідувача ресторану</h1>
-    <p><i>Контактна інформація</i></p>
+    <p class="italic">Контактна інформація</p>
     <form class="contact">
-        <label for="fname"><b>Ім'я:</b></label> <input type="text" id="fname"><br>
-        <label for="telename"><b>Телефон:</b></label> <input type="phone" id="telename" placeholder="у форматі 000-000-00-00"><br>
-        <label for="emailname"><b>Email:</b></label> <input id="emailname" type="email"><br>
-        <label for="datename"><b>Дата відвідування:</b></label> <input id="datename" type="date"><br>
-    </form>
-    <p><i>Персональна інформація</i></p>
-    <form class="personal">
-        <label for="agename"><b>Вік:</b></label> <input type="text" id="agename"><br>
-        <label for="cuisinename"><b>Улюбленна кухня:</b></label> <input type="text" id="cuisinename"><br>
-        <label for="yakiname"><b>Які іще страви ви б хотіли бачити в меню?</b></label> <input type="text" id="yakiname"><br>
-    </form>
-    <p><i>Оцінка нашого закладу</i></p>
-    <p><b>Чому ви обрали наш заклад?</b></p>
-    <form class="chomu">
+        <label for="fname">Ім'я:</label> <input type="text" id="fname">
+        <label for="telename">Телефон:</label> <input type="phone" id="telename" placeholder="у форматі 000-000-00-00">
+        <label for="emailname">Email:</label> <input id="emailname" type="email">
+        <label for="datename">Дата відвідування:</label> <input id="datename" type="date">
+        <p class="italic">Персональна інформація</p>
+        <label for="agename">Вік:</label> <input type="text" id="agename">
+        <label for="cuisinename">Улюбленна кухня:</label> <input type="text" id="cuisinename">
+        <label for="yakiname">Які іще страви ви б хотіли бачити в меню?</label> <input type="text" id="yakiname">
+        <p class="italic">Оцінка нашого закладу</p>
+        <p>Чому ви обрали наш заклад?</p>
         <input type="checkbox" id="chomu1" name="chomus" value="porad">
-        <label for="chomu1">Поряд з місцем роботи</label><br>
+        <label for="chomu1">Поряд з місцем роботи</label>
         <input type="checkbox" id="chomu2" name="chomus" value="pobach">
-        <label for="chomu2">Побачив рекламу</label><br>
+        <label for="chomu2">Побачив рекламу</label>
         <input type="checkbox" id="chomu3" name="chomus" value="poradili">
-        <label for="chomu3">Порадили друзі</label><br>
+        <label for="chomu3">Порадили друзі</label>
         <input type="checkbox" id="chomu4" name="chomus" value="naykrashe">
-        <label for="chomu4">Найкраще співвідношення ціни і якості</label><br>
-    </form>
-    <p><b>Чи будете ви рекомендувати наш заклад своїм знайомим?</b></p>
-    <form class="chi_budete">
+        <label for="chomu4">Найкраще співвідношення ціни і якості</label>
+        <p>Чи будете ви рекомендувати наш заклад своїм знайомим?</p>
         <input type="radio" id="yes" name="chi" value="Так">
-        <label for="yes">Так</label><br>
+        <label for="yes">Так</label>
         <input type="radio" id="no" name="chi" value="Ні">
-        <label for="no">Ні</label><br>
+        <label for="no">Ні</label>
+        <input type="submit" value="Відправити" class="button">
     </form>
-    <input type="submit" value="Відправити" class="button">
 </body>
 </html>
