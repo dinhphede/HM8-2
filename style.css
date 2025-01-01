@@ -12,3 +12,11 @@ form {
 .italic {
     font-style: italic;
 }
+.film-block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.film-block-text label{
+    margin: 0;
+}
